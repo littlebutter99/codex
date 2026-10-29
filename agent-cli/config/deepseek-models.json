@@ -1,0 +1,107 @@
+{
+  "models": [
+    {
+      "slug": "deepseek-flash",
+      "display_name": "DeepSeek Flash",
+      "description": "DeepSeek Responses API",
+      "default_reasoning_level": "high",
+      "supported_reasoning_levels": [
+        {
+          "effort": "low",
+          "description": "low"
+        },
+        {
+          "effort": "high",
+          "description": "high"
+        },
+        {
+          "effort": "max",
+          "description": "max"
+        }
+      ],
+      "shell_type": "shell_command",
+      "visibility": "list",
+      "supported_in_api": true,
+      "priority": 0,
+      "availability_nux": null,
+      "upgrade": null,
+      "model_messages": null,
+      "supports_reasoning_summary_parameter": false,
+      "default_reasoning_summary": "none",
+      "support_verbosity": true,
+      "default_verbosity": "low",
+      "apply_patch_tool_type": "freeform",
+      "truncation_policy": {
+        "mode": "tokens",
+        "limit": 10000
+      },
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "context_window": 1048576,
+      "max_context_window": 1048576,
+      "effective_context_window_percent": 95,
+      "experimental_supported_tools": [],
+      "include_apps_usage_instructions": false,
+      "supports_parallel_tool_calls": true,
+      "use_responses_lite": false,
+      "prefer_websockets": false,
+      "supports_search_tool": false,
+      "tool_mode": null,
+      "multi_agent_version": "v2",
+      "base_instructions": "You are a coding agent powered by DeepSeek. Help the user complete tasks in the shared workspace. Inspect relevant project instructions and files before editing. Use the available tools to make focused changes and verify the result. Keep the user informed with brief progress updates. Ask for missing requirements when necessary. Follow the configured sandbox and approval policies. Never expose credentials. Finish with a concise account of the result and any remaining limitations."
+    },
+    {
+      "slug": "deepseek-v4-pro",
+      "display_name": "DeepSeek V4 Pro",
+      "description": "DeepSeek Responses API",
+      "default_reasoning_level": "high",
+      "supported_reasoning_levels": [
+        {
+          "effort": "low",
+          "description": "low"
+        },
+        {
+          "effort": "high",
+          "description": "high"
+        },
+        {
+          "effort": "max",
+          "description": "max"
+        }
+      ],
+      "shell_type": "shell_command",
+      "visibility": "list",
+      "supported_in_api": true,
+      "priority": 1,
+      "availability_nux": null,
+      "upgrade": null,
+      "model_messages": null,
+      "supports_reasoning_summary_parameter": false,
+      "default_reasoning_summary": "none",
+      "support_verbosity": true,
+      "default_verbosity": "low",
+      "apply_patch_tool_type": "freeform",
+      "truncation_policy": {
+        "mode": "tokens",
+        "limit": 10000
+      },
+      "input_modalities": [
+        "text"
+      ],
+      "context_window": 1048576,
+      "max_context_window": 1048576,
+      "effective_context_window_percent": 95,
+      "experimental_supported_tools": [],
+      "include_apps_usage_instructions": false,
+      "supports_parallel_tool_calls": true,
+      "use_responses_lite": false,
+      "prefer_websockets": false,
+      "supports_search_tool": false,
+      "tool_mode": null,
+      "multi_agent_version": "v2",
+      "base_instructions": "You are a coding agent powered by DeepSeek. Help the user complete tasks in the shared workspace. Inspect relevant project instructions and files before editing. Use the available tools to make focused changes and verify the result. Keep the user informed with brief progress updates. Ask for missing requirements when necessary. Follow the configured sandbox and approval policies. Never expose credentials. Finish with a concise account of the result and any remaining limitations."
+    }
+  ]
+}
